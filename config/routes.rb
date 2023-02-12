@@ -11,5 +11,7 @@ Rails.application.routes.draw do
     resource :password_reset,     only: [:new, :edit, :create, :update]
   end
 
+  resources :lessons, only: :index
+
   root "pages#home"
 end

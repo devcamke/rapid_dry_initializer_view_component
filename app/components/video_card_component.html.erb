@@ -1,0 +1,18 @@
+<div>
+    <div class="relative aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden">
+      <% if thumbnail.present? %>
+        <%= image_tag thumbnail, class: "object-cover" %>
+      <% else %>
+        <%= image_tag "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60", class: "object-cover blur-sm" %>
+      <% end %>
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white/30">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10">
+          <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+        </svg>
+      </div>
+    </div>
+
+    <h3 class="mt-2.5 text-base text-gray-800 font-medium">
+      <%= title %>
+    </h3>
+  </div>
