@@ -83,3 +83,5 @@ gem "http"
 gem "inline_svg"
 
 gem "view_component", "~> 2.82"
+
+gem "dry-initializer", "~> 3.1"
